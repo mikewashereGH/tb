@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.0.5/tailwind.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../TR_Gamevity/Assets/CSS/gamecard.css">
+    <link rel="stylesheet" href="../TR_Gamevity/Assets/CSS/sidebar.css">
+    <link rel="stylesheet" href="../TR_Gamevity/Assets/CSS/search.css">
+
+    <title>Gamevity - Home</title>
+</head>
+
+<body onload="search_jsonData()">
+    <div class="fixed h-full w-full sm:p-4 md:p-4 lg:p-4 flex justify-left items-center bg-gray-900">
+        <div
+            class="relative sidemenu bg-gray-100 md:w-52 lg:w-52 flex flex-col  items-center p-4 rounded-md h-full overflow-y-scroll">
+            <div class="flex flex-col">
+                <div class="flex items-center gap-2 my-8 px-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-400 " viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <h4 class="text-base font-semibold">Gamevity</h4>
+                </div>
+                <div class="flex text-sm items-center text-red-400  gap-2 mb-6 px-6 cursor-pointer ">
+                    <i class="ti ti-home"></i>
+                    <h4>Home</h4>
+                </div>
+                <div class="flex text-sm items-center text-gray-500  gap-2 mb-6 px-6 cursor-pointer hover:text-red-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <h4>Settings</h4>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <div
+                    class="bg-gradient-to-br from-blue-600 via-blue-500 to-blue-600 rounded-lg h-56 w-full mb-6 flex flex-col justify-center items-center p-2">
+                    <svg class="h-20 w-20" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 512 512">
+                        <g data-name="<Group>">
+                            <path fill="#00acea"
+                                d="M420.05,91.95c90.6,90.6,90.6,237.5,0,328.1s-237.5,90.6-328.1,0-90.6-237.5,0-328.1S329.45,1.35,420.05,91.95ZM374.79,374.79a167.994,167.994,0,1,0-237.58,0A167.987,167.987,0,0,0,374.79,374.79Z">
+                            </path>
+                            <path fill="#00efd1"
+                                d="M374.79,137.21a167.994,167.994,0,1,1-237.58,0A167.987,167.987,0,0,1,374.79,137.21ZM281.37,281.37l37.01-87.75-87.75,37.01-37.01,87.75Z">
+                            </path>
+                            <polygon fill="#fedb41"
+                                points="318.38 193.62 281.37 281.37 193.62 318.38 230.63 230.63 318.38 193.62"></polygon>
+                            <path fill="#083863"
+                                d="M256,78a178.005,178.005,0,1,0,125.862,52.137A176.815,176.815,0,0,0,256,78ZM367.718,367.72A156.811,156.811,0,0,1,266,413.677V384.85a10,10,0,0,0-20,0v28.826A157.99,157.99,0,0,1,98.324,266H127.15a10,10,0,0,0,0-20H98.324a156.806,156.806,0,0,1,45.957-101.718h0A156.811,156.811,0,0,1,246,98.324V127.15a10,10,0,0,0,20,0V98.324A157.99,157.99,0,0,1,413.676,246H384.85a10,10,0,0,0,0,20h28.826A156.807,156.807,0,0,1,367.718,367.72Z">
+                            </path>
+                            <path fill="#083863"
+                                d="M314.494,184.406l-87.75,37.01a10,10,0,0,0-5.328,5.328l-37.01,87.75a10,10,0,0,0,13.1,13.1l87.75-37.01a10,10,0,0,0,5.328-5.328l37.01-87.75a10,10,0,0,0-13.1-13.1Zm-40.758,89.331-61.347,25.874,25.874-61.348,61.347-25.874Z">
+                            </path>
+                            <path fill="#083863"
+                                d="M256,14A242,242,0,0,0,84.879,427.121,242,242,0,0,0,427.121,84.879,240.417,240.417,0,0,0,256,14ZM412.979,412.979A222,222,0,0,1,99.021,99.021,222,222,0,0,1,412.979,412.979Z">
+                            </path>
+                        </g>
+                    </svg>
+                    <p style="font-size: 10px;" class="text-white text-xs text-center my-2 px-4 mb-4">Amazing features are
+                        waiting for you.</p>
+                    <button class="bg-white rounded-full px-2 py-2 font-bold" style="font-size: 10px">Donate</button>
+                </div>
+                <div
+                    class="flex text-sm items-center text-red-500 font-bold gap-2 mb-6 px-6 cursor-pointer hover:text-red-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                    </svg>
+                    <h4 class="font-bold">Help</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input id="searchbar" onkeyup="search_jsonData()" type="text" name="search" placeholder=" Search Games...">
+
+    <ul id="list-holder">
+
+    </ul>
+
+    <script src="../TR_Gamevity/Assets/JS/sidebar.js"></script>
+    <script src="../TR_Gamevity/Assets/JS/search.js"></script>
+</body>
+
+</html>
